@@ -1,0 +1,12 @@
+datasets:
+  cc_sbu_align:
+    data_type: images
+    with_mask: False
+    with_ref: False
+    with_pos: True
+    with_gt_seg: False
+    build_info:
+      storage: /mnt/vdb1/datasets/TrainADDataset
+      ve_storage: /mnt/vdb1/datasets/aprilgan_processresults
+      # storage: /mnt/vdb1/fast_disk/TrainADDataset
+      # ve_storage: /mnt/vdb1/fast_disk/aprilgan_processresults

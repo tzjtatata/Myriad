@@ -1,0 +1,15 @@
+deprecated/evaluation_for_language_only.py
+minigpt4/output/*
+*.pyc
+*.png
+*.csv
+*.pth
+*.jpg
+*.npy
+dataset/*
+eval_configs/private
+train_configs/private
+scripts/evaluation/*
+scripts/train/*
+scripts/evaluation/*
+scripts/train/*

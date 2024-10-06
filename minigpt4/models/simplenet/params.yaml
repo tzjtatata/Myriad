@@ -1,0 +1,23 @@
+aed_meta_epochs: 1
+auto_noise: 0.0
+backbone_names:
+- wideresnet50
+cos_lr: false
+dsc_hidden: 1024
+dsc_layers: 2
+dsc_lr: 0.0002
+dsc_margin: 0.5
+embedding_size: 256
+gan_epochs: 4
+layers_to_extract_from: !!python/tuple
+- layer2
+- layer3
+meta_epochs: 40
+mix_noise: 1
+noise_std: 0.015
+patchsize: 3
+pre_proj: 1
+pretrain_embed_dimension: 1536
+proj_layer_type: 0
+target_embed_dimension: 1536
+train_backbone: false

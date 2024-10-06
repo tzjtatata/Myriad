@@ -1,0 +1,7 @@
+datasets:
+  panda:
+    data_type: images
+    build_info:
+      storage: /mnt/vdb1/datasets/anomalyGPT_dataset/images
+      meta_path: /mnt/vdb1/datasets/anomalyGPT_dataset/pandagpt4_visual_instruction_data.json
+      

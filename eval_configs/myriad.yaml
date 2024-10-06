@@ -1,0 +1,30 @@
+model:
+  arch: myriad
+  model_type: pretrain_vicuna
+  freeze_vit: True
+  freeze_qformer: True
+  use_ve: True
+  noise_level: 0.15
+  max_txt_len: 160
+  round_index: 14
+  k_shot: 0
+  end_sym: "###"
+  prompt_path: "prompts/alignment.txt"
+  prompt_template: '###Human: {} ###Assistant: '
+  ckpt: '/home/m/lyz/old_results/myriad_finetune_4shot_lowlr_16k_end2end_mvtec_lora_dim4_random_tokens49/20231109115113/checkpoint_9.pth'
+  # ckpt: '/home/whl/whl/experiments/adinlmm_mvtec_noloraadapter_simple_openKQ_49/20231019231024/checkpoint_9.pth'
+datasets:
+  anomaly_detection:
+    # with_mask: True
+    # with_ref: False
+    vis_processor:
+      train:
+        name: "loc_image_train"
+        # strong_aug: True
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption" 
+
+run:
+  task: image_text_pretrain

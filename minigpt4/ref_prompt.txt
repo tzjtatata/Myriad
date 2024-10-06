@@ -1,0 +1,1 @@
+Comparing to reference image, tell me if this PCB image exists any defects.

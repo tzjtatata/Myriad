@@ -1,0 +1,11 @@
+According to IAD expert opinions and corresponding visual descriptions,
+Please determine whether the image given about the {} contains anomalies or defects. If yes, give a specific reason.
+Normally, the image given should depict clear and identifiable cables. It may have defects such as missing cables, missing wires, cable swap, bent wires, cut inner or outer insulation and poke insulation.
+
+Please determine whether the image given about the cable contains visible anomalies or defects that would be apparent to the naked eye. If yes, give me a specific reason.
+There is no anomaly in the image capture process. Is there any defect on the cable shown in the image?
+The anomaly must be visible to the naked eye. Is there any defect on the cable shown in the image?
+
+This image has not been edited.
+The image shows four white candles arranged in a square pattern on a black background.
+According to IAD expert visual descriptions, find out if there are defects in this image. If yes, describe the defects.

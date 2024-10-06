@@ -1,0 +1,15 @@
+datasets:
+  anomaly_detection_TTest:
+    is_preload: True
+    data_type: images
+    with_mask: False
+    with_ref: False
+    with_pos: False
+    build_info:
+      storage: /mnt/vdb1/datasets/TrainADDataset
+      ve_storage: /mnt/vdb1/datasets/aprilgan_processresults
+      ann_paths:
+        - DC_VISA_train_normal.jsonl
+    augment:
+      nsa_max_width: 0.4
+      

@@ -1,0 +1,1 @@
+<Img><ImageHere></Img> Describe this image in detail and find out anomaly defects if they exist.

@@ -1,0 +1,57 @@
+model:
+  arch: myriad
+  model_type: pretrain_vicuna
+  freeze_vit: True
+  freeze_qformer: True
+  max_txt_len: 160
+  end_sym: "###"
+  prompt_path: "prompts/alignment.txt"
+  prompt_template: '###Human: {} ###Assistant: '
+  ckpt: '/mnt/vdb1/pretrained_models/pretrained_minigpt4_7b.pth'
+  # ckpt: '/mnt/vdb1/whl/experiments/adinlmm_lora_dim1_random_tokens49/20231022001116/checkpoint_9.pth'
+
+datasets:
+  anomaly_detection:
+    build_info:
+      ann_paths:
+        - DC_MVTEC_train_normal.jsonl
+    vis_processor:
+      train:
+        name: "loc_image_train"
+        identity: True
+        # strong_aug: True
+        image_size: 224
+    text_processor:
+      train:
+        name: "blip_caption"
+
+run:
+  task: image_text_pretrain
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 1e-4
+  min_lr: 0
+  warmup_lr: 1e-6
+
+  weight_decay: 0.05
+  max_epoch: 10
+  iters_per_epoch: 1600
+  batch_size_train: 4
+  batch_size_eval: 4
+  num_workers: 8
+  warmup_steps: 0
+
+  seed: 42
+  output_dir: "/home/lyz/vdb/results/minigpt/mvtec/myriad_finetune_end2end_mvtec_lora_dim4_random_tokens49_ChannelPReluInst/"
+
+  amp: True
+  resume_ckpt_path: null
+
+  evaluate: False 
+  train_splits: ["train"]
+
+  device: "cuda"
+  world_size: 1
+  dist_url: "env://"
+  distributed: True
+  max_checkpoints: 20

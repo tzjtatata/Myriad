@@ -1,0 +1,5 @@
+datasets:
+  normalmvtec:
+    data_type: images
+    build_info:
+      storage: /mnt/vdb1/datasets/TrainADDataset

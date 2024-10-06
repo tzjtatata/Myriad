@@ -1,0 +1,11 @@
+datasets:
+  two_class_anomaly_detection:
+    is_preload: True
+    data_type: images
+    build_info:
+      storage: ./data/TrainADDataset
+      img_size: 224
+      crop_size: 224
+      ann_paths:
+        - DC_MVTEC_train_2cls.jsonl
+      
