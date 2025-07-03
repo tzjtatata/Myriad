@@ -10,7 +10,7 @@ Yuanze Li, Haolin Wang, Shihao Yuan, Ming Liu, Debin Zhao, Yiwen Guo, Chen Xu, G
 
 
 ## TODO
-- [ ] upload Myriad pre-trained weights.
+- [x] upload Myriad pre-trained weights.
 - [ ] update evaluation guidance.
 - [ ] update training guidance.
 
@@ -25,7 +25,7 @@ Yuanze Li, Haolin Wang, Shihao Yuan, Ming Liu, Debin Zhao, Yiwen Guo, Chen Xu, G
 Coming soon.
 
 ## Myriad Weights
-Myriad Weights are coming soon. 
+Myriad Weights are updated. Baidu CloudPan: https://pan.baidu.com/s/18y4inoDgLTaHXPpuepYmrA?pwd=MYRD Password: MYRD 
 
 ## Demo
 
